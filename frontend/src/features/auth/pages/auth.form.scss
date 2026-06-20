@@ -1,0 +1,91 @@
+main {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #0c0e12;
+
+    .form-container {
+        width: 100%;
+        max-width: 400px;
+        background-color: #14171e;
+        border: 1px solid #272c38;
+        border-radius: 0.75rem;
+        padding: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #ffffff;
+            text-align: center;
+            letter-spacing: -0.5px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 0.875rem;
+            color: #9ca3af;
+            font-weight: 500;
+
+            a {
+                color: #6366f1;
+                text-decoration: none;
+                font-weight: 600;
+                margin-left: 0.25rem;
+                transition: color 0.15s ease;
+
+                &:hover {
+                    color: #818cf8;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #9ca3af;
+            letter-spacing: 0.1px;
+        }
+
+        input {
+            width: 100%;
+            background-color: #1a1e26;
+            border: 1px solid #2d3345;
+            outline: none;
+            padding-inline: 1rem;
+            padding-block: 0.75rem;
+            border-radius: 0.5rem;
+            color: #ffffff;
+            font-size: 0.95rem;
+            font-family: inherit;
+            transition: border-color 0.15s ease, background-color 0.15s ease;
+
+            &::placeholder {
+                color: #4b5563;
+            }
+
+            &:focus {
+                border-color: #6366f1;
+                background-color: #1d222c;
+            }
+        }
+    }
+}
